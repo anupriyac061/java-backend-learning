@@ -1,0 +1,56 @@
+
+Day 1: Learning Spring Security
+
+Topic: Introduction to Spring Security and Database Integration
+
+Today, I started learning Spring Security, a powerful framework in Spring used to secure Java applications. I also learned how to retrieve user-related data from a database and use it in an application.
+
+1. What is Spring Security?
+
+Spring Security is a framework that provides authentication and authorization for Java applications built using Spring.
+
+- Authentication: Verifies who the user is.
+- Authorization: Determines what an authenticated user is allowed to access.
+- Password Security: Supports secure password storage using password encoders.
+- Access Control: Helps protect application endpoints from unauthorized access.
+
+2. How Does Spring Security Work?
+
+When a user sends a request to a secured application, Spring Security checks whether the user is authenticated and whether they have the required permissions.
+
+For example, a user may need to log in before accessing a protected dashboard.
+
+3. Fetching User Data from a Database
+
+I learned how an application can retrieve user information stored in a database and use it during authentication.
+
+The general flow is:
+
+1. A user submits their login credentials.
+2. Spring Security receives the authentication request.
+3. The application retrieves the corresponding user details from the database.
+4. The submitted credentials are validated.
+5. If authentication succeeds, access is granted according to the security configuration.
+
+In a typical Spring Boot application, this process can involve:
+- Entity: Represents user data stored in a database.
+- Repository: Retrieves user records from the database.
+- UserDetailsService: Loads user information for Spring Security.
+- PasswordEncoder: Verifies passwords securely.
+- SecurityFilterChain: Defines security rules for incoming HTTP requests.
+
+4. Why Is Database Integration Important?
+
+Integrating Spring Security with a database allows applications to manage user accounts dynamically instead of relying only on hardcoded usernames and passwords.
+
+It also makes it possible to manage user roles, credentials, and access permissions through stored user information.
+
+5. Key Learnings
+
+- Understood the purpose of Spring Security.
+- Learned the difference between authentication and authorization.
+- Explored how user information can be fetched from a database.
+- Understood the role of repositories and `UserDetailsService`.
+- Learned how database-backed user authentication works conceptually.
+
+
